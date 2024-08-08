@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: sans-serif; */
+    font-family: "Plain Light";
+    color: #fff;
+}
+
+body,
+html{
+    width: 100%;
+    height: 100%;
+    
+}
+/* loader  */
+.loader{
+    width: 100%;
+    height: 100vh;
+    padding: 2vw 7vw;
+    background-color: black;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+.row-loader{
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+    overflow: hidden;
+    
+}
+.row-loader h2{
+    font-size: 6.7vw;
+    text-transform: uppercase;
+    font-family: "Silk Serif";
+}
+
+.row-loader h1{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 6.9vw;
+    line-height: 6.5vw;
+    
+
+}
+
+.load-bottum{
+    width: 10%;
+    /* background-color: red; */
+    margin-left: 35%;
+    margin-top:4vw ;
+    font-weight: 400;
+    font-size: 1vw;
+}
+.loading-no{
+    width: 25vw;
+    text-align: end;
+   
+}
+.loading-no span{
+    font-family: "Silk Serif";
+}
+.now{
+    /* animation-name: anim; */
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: infinite;
+    /* animation-delay: 1.5s; */
+    opacity: 0;
+    padding-right: 1.5vw;
+}
+
+@keyframes anim {
+    0%{
+        opacity: 1;
+        font-family: "plain light";
+        font-weight: 500;
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+
+    }
+    45%{
+        opacity:0;
+        font-family: "plain light";
+        font-weight: 500;
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+       
+    }
+    50%{
+        opacity: 1;
+        font-family: "silk serif";
+        font-weight: 500;
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+      }
+    100%{
+        opacity: 0;
+        font-family: "silk serif";
+        font-weight: 500;
+        color: transparent;
+    }
+}
+
+
+/* end loader */
+
+main{
+    background-color: black;
+    width: 100%;
+    position: relative;
+}
+
+.page1,.page2{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(9, 9, 9);
+
+}
